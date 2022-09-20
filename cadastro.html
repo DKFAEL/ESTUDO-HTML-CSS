@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+</head>
+<body>
+    
+    <form> <!-- Container de inputs -->
+
+        <div >                                                  <!--FOR= Se vincula ao input ID-->
+            <label for="campoNome"> Nome Completo</label> <br> <!-- Label = Rótulo do campo (da um nome)-->
+            <input id="campoNome" name="campoNome" type="text" placeholder=" Seu nome" required>        <!-- INPUT = Campo de entrada de dados-->                                       <!-- ID = ENTENDE O FOR DO LABEL-->
+                                                                        <!-- Required =  OBRIGA A RESPONDER   O     INPUT-->
+                                                                        <!-- PLACEHOLDER = DICA SOBRE O QUE É O INPUT-->
+                                                                        <!-- LABE E INPUT TRABALHAM EM CONJUNTOS!!-->
+
+        </div>
+
+        <div>
+
+            <label for="campoEmail">  Email</label><br>
+            <input id="campoEmail" name="campoEmail" type="email" placeholder="usuario@exemplo.com" required>
+        </div>
+
+        <div>
+
+            <label for="campoSenha">Senha</label> <br>
+            <input id="campoSenha" name="campoSenha" type="password" placeholder="Sua Senha" required> 
+        </div>
+
+        <div>
+
+            <label for="campoProfissao">Profissão</label> <br>            <!-- Caixa de seleção c/ opção-->
+            <select name="campoProfissao" id="campoProfissao">
+                <option selected disabled> Selecione uma Opção</option>
+                <option value="professor">Professor</option>
+                <option value="técnico">Técnico</option>    
+                <option value="especialista">Especialista</option>
+            </select>
+        </div>
+
+
+        <label for="">Idioma Nativo</label> <br>
+        <input id="checkIngles" name="campoIdioma" type="radio" value="ingles"/>
+        <label for="checkIngles"> Inglês</label>
+
+
+        <input id="checkEspanhol" name="campoIdioma" type="radio" value="Espanhol"/>
+        <label for="checkIngles"> Espanhol</label>
+
+        <input id="checkPortugues" name="campoIdioma" type="radio" value="portugues"/>
+        <label for="checkPortugues">Portugues</label><br><br> <br>
+
+
+        <label for="campoResumo"> Fale sobre você</label> <br>
+        <textarea maxlength="100" minlength="30" name="campoResumo" id="campoResumo" cols="30" rows="10"></textarea>
+
+        <!-- Maxlenght = maximo de caracteristicas-->
+        <!-- Minlenght = minimo de caracteristicas-->]
+        <!-- FOR = DA PREFERENCIA AO IDDO INPUT-->
+        <!--Value = Valor da propriedade-->
+        <!-- TYPE = TIPO DE... -->
+        <!-- HR = SEPARA COM LINHA-->
+
+        <div>
+            <input id="checkTermos" type="checkbox" name="concordaTermos" required>
+            <label for="checkTermos"> Concordo com os termos de serviços</label>
+    
+        </div>
+        <hr>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+
+        <button type="button" onclick ="alert('OIE')"> Outra Ação</button>
+
+        <!--onclick = AO CLICLAR...-->
+    
+    </form>
+</body>
+</html>
