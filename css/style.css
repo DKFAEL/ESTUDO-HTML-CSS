@@ -1,0 +1,57 @@
+/*
+Para usar ocss externo devemos linkar ele ao html destino
+*/
+
+
+p{
+    color: rgb(172, 110, 110);       /* Cor do paragrafo  */
+    font-size: 20px;                   /* Tamanho da fonte */
+    text-decoration: underline;        /* Subilinhar o paragrafo */
+    
+ }
+ body {
+
+    background-color: rgb(18, 17, 19);  /* Altera a cor de fundo do body*/
+    font-family: 'Montserrat', sans-serif; /* fallback*/
+
+ } 
+
+ /*
+ TIPOS DE SELETOR BÁSICO
+ 1-Por elemento
+ 2- por id (#) -> estelização unica
+ 3- por class (.) estilização p/ varios
+ */
+
+ h1, h2, h3 {
+    color: white;
+ }
+
+ /* Uso o id quando quero estilizar um elemento especifico */
+
+#index-h1 {
+   color: rgb(107, 43, 226);
+   font-family: monospace;
+}
+
+ /* Posso aplicar a class em diversos elementos diferentes*/
+
+ .cabecalho {
+    color: crimson;  /* COR */
+    text-decoration: underline; /* SUBLINHADO*/
+    font-weight: 900;
+ }
+
+ .quadrado {
+    width: 250px;
+
+    height: 250px;
+    background-color: yellow; /* COR DE FUNDO*/
+    border-radius: 16px;  /* BORDA*/
+ }
+
+ .foto {
+    width: 250px;     /* Largura*/
+        border-radius: 16px; /* BORDA*/
+ }
+   
