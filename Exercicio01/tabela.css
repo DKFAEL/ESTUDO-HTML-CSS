@@ -1,6 +1,36 @@
-body {
+.my-table {
+    width:400px;
+    border-collapse: collapse;   /* unifica a borda*/ 
     margin: auto;
-    background-image: url(br.webp);
-            background-attachment: fixed;
-            background-image: -webkit-image-set(10px);
+}
+
+/* esteliza o td/th dentro do  .my-table*/
+.my-table td, .my-table th {
+border:1px solid #ddd;
+padding: 8px;
+
+
+}
+.my-table th {
+    background-color: rgb(9, 10, 10);
+    padding: 10px 0;
+    color: white;
+}
+
+
+/*
+even = par
+- aplica o estilo aos tr de numero par
+*/
+.my-table tr:nth-child(even) {
+    background-color: #fefcfc;
+}
+
+.my-table tr:hover {
+    background-color: rgb(47, 239, 253);
+}
+
+.my-table td {
+    text-align:center;  /* left, right, justify*/
+    height: 50px;
 }
