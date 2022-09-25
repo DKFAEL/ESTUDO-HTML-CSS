@@ -27,7 +27,7 @@ body{
     overflow: hidden;
 }
 
-.data-e-sub{
+.leg{
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -36,14 +36,9 @@ body{
     box-sizing: border-box;
 }
 
-.titulo{
-    font-size: 20px;
-    font-weight: bolder;
-    padding: 0 20px;
-    box-sizing: border-box;
-}
 
-.subtitulo{
+
+.sub{
     color: #080808;
     font-weight: bold;
     margin-top: auto;
@@ -67,11 +62,11 @@ img:hover{
     border: none;
     
     color:  white;
-    /*  16px= vertical  20px = horizontal*/
+    
     padding: 6px 5px;
     font-size: 18px;
     margin:6px 9px;
-    cursor: pointer; /* icone de clique*/
+    cursor: pointer; 
     border-radius: 6px;
 }
 
