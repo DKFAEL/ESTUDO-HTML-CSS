@@ -5,7 +5,7 @@ body{
 
 .container{
     display: flex;
-    flex-wrap:nowrap;
+    flex-wrap:wrap;
     width: 1000px;
     height:0;
     padding: 10px; 
@@ -55,7 +55,7 @@ img{
 }
 
 img:hover{
-    scale: 1.1;
+    scale: 1.1; 
 }
 .button {
     background-color: #4caf50;
