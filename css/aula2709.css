@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+:root {                 /* REPRESENTA A TODOS ELEMENTOS FILHOS  (VARIAVEL GLOBAL) */
+    --azul: #0f637a;
+    --amarelo: #ffd900;         /* TEM QUE TER O --   */
+}
+.navbar {
+    background-color: var(--azul);
+    display: flex;
+    min-height: 64px;
+    padding: 20px;
+    justify-content: space-between;
+}
+.navbar-brand img {
+    height: 36px;
+}
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    background-color: red;
+   
+}.navbar-menu  {
+    display: flex;
+    align-items: center;
+
+}
+.navbar-burger {
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    display: none;  /* OCULTA O ELEMENTO*/
+}
+
+.navbar-link{
+    text-decoration: none; /* tira o sublinhado*/
+    color:white;
+    padding: 0 4px;
+}
+.navbar-link:hover {
+    opacity: 0.73;
+}
+/* MIDIA QUERYS 
+/* Até 768px aplique estes estilos*/
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none; 
+
+    }
+    .navbar-burger{
+        display: inline;
+    }
+
+    .navbar-brand {
+        justify-content: space-between;
+    }
+
+.navbar, .navbar-menu {
+    flex-direction: column;
+}
+.navbar-link {
+    /* <espaçamento-vertical> <espaçamento-horizontal>*/
+    padding: 8px 0;
+}
+}
+.ativa {
+    display: flex;
+}
+
+
